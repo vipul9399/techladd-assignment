@@ -186,21 +186,21 @@ function App() {
             onChange={handleCheckboxChange}
           />
         ) : field.name === 'uploadedFiles' ? ( // Added field for file upload
-        <>
-          <input
-            type="file"
-            name={field.name}
-            multiple
-            onChange={handleFileUpload}
-            style={{
-              borderColor: formErrors[field.name] && 'red', // Highlight the border if there is an error
-            }}
-          />
-          <span>PDFs (not scanned copies) of company's operating bank current account(s) statements for the past 6 months.
-Example: If today is 07 Jun 23, then please upload bank statements from Dec 22 to May 23 (both months inclusive)
-If your company is multi-banked, then please upload 6 months bank statements for each bank account
-If your file is password protected, we request you to remove the password and upload the file to avoid submission failure
-In case if you are facing any issue while uploading bank statements, Please contact us on support@credilinq.ai</span>
+          <>
+            <input
+              type="file"
+              name={field.name}
+              multiple
+              onChange={handleFileUpload}
+              style={{
+                borderColor: formErrors[field.name] && 'red', // Highlight the border if there is an error
+              }}
+            />
+            <span>PDFs (not scanned copies) of company's operating bank current account(s) statements for the past 6 months.
+              Example: If today is 07 Jun 23, then please upload bank statements from Dec 22 to May 23 (both months inclusive)
+              If your company is multi-banked, then please upload 6 months bank statements for each bank account
+              If your file is password protected, we request you to remove the password and upload the file to avoid submission failure
+              In case if you are facing any issue while uploading bank statements, Please contact us on support@credilinq.ai</span>
           </>
         ) : (
           <>
