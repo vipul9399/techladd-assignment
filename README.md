@@ -16,6 +16,11 @@ To create a form with validations using ReactJS and a backend with Node.js using
 
 ### Note: Replace 'localhost', 'your_username', 'your_password', and 'your_database_name' with your MySQL server information.
 
+## Start the backend server:
+node server.js
+
+Now, you can visit http://localhost:3000 in your browser to see the form. When you submit the form, it will make a GraphQL mutation request to the backend server running at http://localhost:4000/graphql. The form data will be stored in the formSubmissions array on the backend.
+
 
 ### After following proper steps as mentioned, Start the React development server:
 
